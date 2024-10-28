@@ -1,0 +1,128 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.box-wrap {
+    background-color: #ffffff;
+    border: 1px solid #c7c7c7;
+    margin-bottom: 20px;
+    padding: 15px;
+    position: relative;
+}
+.wrap h2 {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 29px;
+    padding: 9px 15px 4px 0;
+}
+.wrap h2, .subtitle {
+    font-weight: 400;
+    margin: 0;
+}
+.wrap > h2{
+    margin-bottom: 20px;
+}
+.box-wrap > h3 {
+    background-color: rgba(0, 0, 0, 0);
+    border: medium none;
+    box-shadow: none;
+    color: #5f5f5f;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+#accu-admin-settings input[type=text], #accu-admin-settings input[type=password], #accu-admin-settings textarea{
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+.form-horizontal .checkbox-group label .text{
+    display: block;
+    float: left;
+    width: 100%;
+    max-width: 300px;
+    margin-right: 20px;
+    text-align: left;
+}
+.form-horizontal .text-group label{
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    float: left;
+}
+.form-horizontal .uninline label{
+    float: none;
+    max-width: 100%;
+    display: block;
+}
+.form-horizontal .quantity-box{
+    width: 100px !important;
+}
+.form-horizontal .enumerate-box{
+    width: 300px !important;
+}
+.form-group > label{
+    line-height: 1.4em !important;
+}
+.form-horizontal .form-group .control-group{
+    margin-left: 320px;
+}
+.form-horizontal .uninline .control-group{
+    margin-left: 0;
+}
+#accu-admin-settings .input-xs{
+    max-width: 120px !important;
+}
+#accu-admin-settings .input-wide{
+    max-width: 400px !important;
+}
+.blue-note{
+    background: #b2d7ef;
+    border: 1px solid #7fb2d2;
+    border-radius: 2px;
+    padding: 10px;
+}
+#accu-admin-settings .form-action input[type=submit] {
+    height: 38px !important;
+    line-height: 35px !important;
+}
+/*.toggable-content{
+    display: none;
+}*/
+.form-group:last-child{
+    margin-bottom: 0;
+}
+.whats-this{
+    cursor: help;
+}
+.fliptip{
+    position: absolute;
+    padding: 4px 10px;
+    font-size: 12px;
+    background: #333;
+    color: #eee;
+    border-radius: 3px;
+}
+
+@media (max-width: 600px){
+    .form-horizontal .text-group label{
+        float: none;
+        max-width: 100%;
+        display: block;
+    }
+    .form-horizontal .form-group .control-group{
+        margin-left: 0;
+    }
+}
